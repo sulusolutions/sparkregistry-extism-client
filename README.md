@@ -16,25 +16,24 @@ Before using this plugin, ensure you have the following setup:
     Clone this repository to get the plugin source code:
 
     ```sh
-    git clone https://your-repository-url-here
-    cd sparkreg-extism-plugin
+    git clone https://github.com/sulusolutions/sparkregistry-extism-client
+    cd sparkregistry-extism-client
     ```
-
-    Replace `https://your-repository-url-here` with the actual URL of your repository.
 
 2. **Compile the Plugin**
 
     Use the TinyGo compiler to build the WebAssembly module from the Go source code:
 
     ```sh
-    tinygo build -o sparkreg_plugin.wasm -target wasi main.go
+    tinygo build -o sparkregistry.wasm -target wasi main.go
     ```
 
-    This command compiles the Go code in `main.go` to a WebAssembly module named `sparkreg_plugin.wasm`.
+    This command compiles the Go code in `main.go` to a WebAssembly module named `sparkregistry.wasm`.
 
 ## Usage
 
 To use the plugin with the Extism CLI, execute the following command:
 
 ```sh
-extism call sparkreg_plugin.wasm httpGetSparkRegList --wasi --allow-host='sparkreg.com'
+extism call sparkregistry.wasm list --wasi --allow-host='*'
+```
