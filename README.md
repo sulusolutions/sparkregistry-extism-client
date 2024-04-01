@@ -6,8 +6,8 @@ This project is an Extism plugin written in Go to interact with Sulu's registry 
 
 Before using this plugin, ensure you have the following setup:
 
-- Extism CLI and runtime installed and configured on your system. Visit [Extism's official documentation](https://docs.extism.com/) for installation and setup instructions.
-- TinyGo compiler for compiling Go to WebAssembly. Installation instructions can be found at [TinyGo's Getting Started guide](https://tinygo.org/getting-started/install/).
+- Extism CLI and runtime installed and configured on your system. Visit [Extism's official documentation](https://extism.org/) for installation and setup instructions.
+- TinyGo compiler for compiling Go to WebAssembly. Installation instructions can be found at [TinyGo's site](https://tinygo.org/).
 
 ## Installation
 
