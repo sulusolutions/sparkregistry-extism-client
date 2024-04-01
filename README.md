@@ -37,3 +37,31 @@ To use the plugin with the Extism CLI, execute the following command:
 ```sh
 extism call sparkregistry.wasm list --wasi --allow-host='*'
 ```
+
+## Functions
+
+### list()
+
+The `list()` function provides a comprehensive overview of all available APIs within the service. Each API is described following the OpenAPI 3.0.0 specification, which includes detailed information about endpoints, security schemes, parameters, responses, and more.
+
+#### Output Example
+
+The output of the `list()` function is a JSON object with a single key `apis`, which is an array where each element represents an API described using the OpenAPI specification. Below is a summarized example of the response:
+
+```json
+{
+  "apis": [
+    {
+      "openapi": "3.0.0",
+      "info": {
+        "title": "Weatherman API",
+         ...
+        }
+    },
+    {
+        ...
+    }
+    ...
+  ]
+}
+```
